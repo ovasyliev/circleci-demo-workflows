@@ -42,8 +42,8 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-          type: approval
       - deploy:
+          type: approval
           requires:
             - build
           filters:
